@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!---
+    Copyright (c) 2017 Xiaomi Technologies, Inc.
+    All Rights Reserved.
+    Confidential and Proprietary - Xiaomi Technologies, Inc.
+ -->
+<permissions>
+    <library name="vendor.xiaomi.hardware.citsensorservice-V1.1"
+          file="/system/framework/vendor.xiaomi.hardware.citsensorservice-V1.1-java.jar"/>
+</permissions>
+

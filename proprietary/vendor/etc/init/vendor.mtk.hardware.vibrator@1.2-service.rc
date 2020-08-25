@@ -1,0 +1,9 @@
+on post-fs
+    chown system system /sys/bus/i2c/drivers/aw8624_haptic/6-005a/f0_save
+    chown system system /sys/bus/i2c/drivers/aw8624_haptic/6-005a/osc_save
+    chown system system /sys/bus/i2c/drivers/aw8697_haptic/7-005a/f0_save
+    chown system system /sys/bus/i2c/drivers/aw8697_haptic/7-005a/osc_save
+service vendor.mtk.vibrator-1-2 /vendor/bin/hw/vendor.mtk.hardware.vibrator@1.2-service
+    class hal
+    user system
+    group system input

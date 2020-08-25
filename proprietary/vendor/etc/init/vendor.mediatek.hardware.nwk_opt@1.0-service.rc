@@ -1,0 +1,11 @@
+on boot
+   chown system radio /dev/input/event0
+   chown system radio /dev/input/event1
+   chown system radio /dev/input/event2
+   chown system radio /dev/mix_event 
+   chown system radio /sys/kernel/debug/fpsgo/fstb/fpsgo_status
+   chown system radio /dev/ttyC5
+service nwk_opt-hal-1-0 /vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
+    class hal
+    user system
+    group system

@@ -1,0 +1,4 @@
+service mtk_hal_vpu /vendor/bin/hw/vendor.mediatek.hardware.vpu@1.0-service
+    class hal
+    user system
+    group camera

@@ -1,0 +1,11 @@
+#This cmd can bypass all the algo in hifi3(UL and DL)
+AudioSetParam SET_AURISYS_ON=0
+#This cmd can bypass all the algo in smartPA internal dsp
+tinymix "PCM Source" "ASP"
+
+sleep 0.3
+tinymix 'Headset_PGAL_GAIN' 8
+tinymix 'Headset_PGAR_GAIN' 8
+tinymix 'Audio_PGA1_Setting' 3
+tinymix 'Audio_PGA2_Setting' 3
+tinymix 'Handset_PGA_GAIN' 0

@@ -1,0 +1,16 @@
+# MTK conninfra .rc configure
+
+on post-fs-data
+    mkdir /data/vendor/connsyslog/bt 0775 system system
+    mkdir /data/vendor/connsyslog/wifi 0775 system system
+
+
+on boot
+
+# conninfra
+service conninfra_loader /vendor/bin/conninfra_loader
+    class core
+    user system
+    group system
+    oneshot
+
