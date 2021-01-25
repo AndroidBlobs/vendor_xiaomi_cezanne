@@ -1,0 +1,8 @@
+# GBE
+service gbe /vendor/bin/gbe
+    class main
+    user system
+    oneshot
+
+on boot
+    start /vendor/bin/gbe
